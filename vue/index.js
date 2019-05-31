@@ -68,7 +68,7 @@ var bookStore = new Vue({
     computed: {
         getSearch: function () {
             this.showBooks = this.allBooks.filter(book => {
-                return book.titulo.toLowerCase().match(this.search) || book.descripcion.toLowerCase().match(this.search);
+                return book.titulo.toLowerCase().match(this.search.toLowerCase()) || book.descripcion.toLowerCase().match(this.search.toLowerCase());
             });
             return this.showBooks;
         }

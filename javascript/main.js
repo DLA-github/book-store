@@ -72,7 +72,7 @@ document.getElementById("inputSearch").addEventListener('keyup', getSearch);
 
 //////////////////////FUNCTIONS////////////////////////////////
 function getSearch(e) {
-    let str = e.target.value;
+    let str = e.target.value.toLowerCase();
     showBooks = allBooks.filter(book => {
         return book.titulo.toLowerCase().match(str) || book.descripcion.toLowerCase().match(str);
     });
