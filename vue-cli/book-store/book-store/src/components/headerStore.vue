@@ -7,10 +7,8 @@
 <script>
 export default {
   name: "headerStore",
-  data() {
-    return {
-      msg: ""
-    };
+  props: {
+    msg: String
   }
 };
 </script>
